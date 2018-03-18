@@ -12,7 +12,7 @@ extern int g_alien_cnt;
 ## Functions
 ### Names
 *{libLabel}\_{object}[\_]{action\_or\_verb}* or *{libLabel}\_{action\_or\_verb}\_{object}*
-```
+```C
 sfSyl_welcome_txt_print ()
 sfSyl_print_welcome_txt ()
 ```
@@ -22,7 +22,7 @@ sfSyl_print_welcome_txt ()
 {  
 	/*...*/  
 }*
-```
+```C
 noreturn void
 usage( int status )
 {
@@ -33,60 +33,60 @@ usage( int status )
 * Rationale: easier to `grep` (`"^func_name"`)
 ## Pointers
 *{type} \*{var}*
-```
+```C
 int *var1, *var2; 	/* 2 pointers */
 int *var1, var2; 	/* 1 pointer, 1 int ! */
 ```
 ## Typedefs
 *[libLabel\_]{name}\_t*
-```
+```C
 superint_t i;
 sfs_superint_t j;
 ```
 ## Structures
 *{name\_of\_struct}\_s*, *{name\_of\_struct\_var}*
-```
+```C
 datstruct_s this_is_a_struct;
 ```
 ## Enums
 *{name\_of\_enum}\_e*, *{ENUM\_CONST}*, *{name\_of\_enum\_var}*
-```
+```C
 enum mood_e { TAKE_IT, GIVE_IT, KEEP_IT } my_mood;
 ```
 ## Gotos
 *[GT\_]{ThisPart}* or *[GT\_]{this_part}*
-```
+```C
 EmergencyClosure:
 GT_EmergencyClosure:
 GT_emergency_closure:
 ```
 ## Define
 *[TYPE\_]{NAME\_OF\_DEF}*
-```
+```C
 #define ALIENS_ON_PLANET_CNT 	1234
 ```
 ## Macro (DEFINES)
 *[M\_]{OBJECT}\_{VERB}* or *[M\_]{VERB}\_{OBJECT}*
-```
+```C
 #define ALIENS_ON_PLANET_LOCATE ()
 #define M_ALIENS_ON_PLANET_LOCATE ()
 #define LOCATE_ALIENS_ON_PLANET ()
 ```
 ## Macro (header guars)
 *{NAME\_OF\_HEADER}\_H*
-```
+```C
 MY_COOL_LIB_H
 ```
 * Rationale: `\_` and `\_\_`-starting header guars are used by standard library headers
 ## Parenthesis / braces
 *{func}( {args} );*
-```
+```C
 printf( "spaces btwn args and parenthesis : %d", true_dat );
 ```
 *{statement} ({condition}) {  
     /*...*/  
 }*
-```
+```C
 if (true_dat == 1) {
 	/*...*/
 } else {
@@ -94,7 +94,7 @@ if (true_dat == 1) {
 }
 ```
 ## Code example
-```
+```C
 #ifndef THAT_GUARD_THOUGH_H
 #define THAT_GUARD_THOUGH_H
 
