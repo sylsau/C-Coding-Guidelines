@@ -149,10 +149,11 @@ f_datFunc( void )
 * Always use header guards in header files.
 * Put braces even on one-line statements.
 
-### Linux kernel coding style
+### GNU `indent`
 
 GNU `indent` now has an option to format your code according to the Linux kernel 
-coding style: `indent -linux [file]`.
+coding style: `indent -linux [file]`; it's just missing the one option I would
+add (see *sindent*).
 Doc: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
 
 ### References/resources
