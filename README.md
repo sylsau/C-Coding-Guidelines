@@ -73,7 +73,7 @@ GT_emergency_closure:
 #define M_ALIENS_ON_PLANET_LOCATE ()
 #define LOCATE_ALIENS_ON_PLANET ()
 ```
-### (header guars)
+### Header guars
 *{NAME\_OF\_HEADER}\_H*
 ```C
 MY_COOL_LIB_H
