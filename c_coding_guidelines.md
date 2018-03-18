@@ -11,9 +11,9 @@ C Coding Guidelines
 * Code for debug purpose must be removed from the final form of the code.
 
 | Variables | example |
-| -- | |
-|Local: **{name\_of\_var}**  | `int i;` |
-| Global: **g\_{detailed\_name\_of\_var}**  | `extern int g_alien_cnt; ` |
+| -- | -- |
+| Local: **{name\_of\_var}**  			| `int i;` |
+| Global: **g\_{detailed\_name\_of\_var}**  	| `extern int g_alien_cnt; ` |
 ## Functions
 ### Names
 **{libLabel}\_{object}[\_]{action\_or\_verb}** or **{libLabel}\_{action\_or\_verb}\_{object}**
