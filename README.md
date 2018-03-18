@@ -21,118 +21,118 @@ extern int g_alien_cnt;
 ### Names
 **{libLabel}\_{object}[\_]{action\_or\_verb}** or **{libLabel}\_{action\_or\_verb}\_{object}**
 ```
-	sfSyl_welcome_txt_print ()
-	sfSyl_print_welcome_txt ()
+sfSyl_welcome_txt_print ()
+sfSyl_print_welcome_txt ()
 ```
 ### Declarations
 **[attributes ]{type} 
 {function_name}( {args} )**
 ```
-	noreturn void
-	usage( int status )
-	{
-		...
-	}
+noreturn void
+usage( int status )
+{
+	...
+}
 ```
 * Rationale: easier to `grep` (`"^func_name"`)
 ## Pointers
 **{type} \*{var}**
 ```
-	int *var1, *var2; 	/* 2 pointers */
-	int *var1, var2; 	/* 1 pointer, 1 int ! */
+int *var1, *var2; 	/* 2 pointers */
+int *var1, var2; 	/* 1 pointer, 1 int ! */
 ```
 ## Typedefs
 *{name}_t*
 *{libLabel_}{name}_t*
 ```
-	superint_t
-	sfs_superint_t
+superint_t
+sfs_superint_t
 ```
 ## Structures
 *{name_of_struct}_s*, *{name_of_struct_var}*
 ```
-	datstruct_s this_is_a_struct
+datstruct_s this_is_a_struct
 ```
 ## Enums
 *{name_of_enum}_e*, *{ENUM_CONST}*, *{name_of_enum_var}*
 ```
-	enum mood_e { TAKE_IT, GIVE_IT, KEEP_IT } mood;
+enum mood_e { TAKE_IT, GIVE_IT, KEEP_IT } mood;
 ```
 ## Gotos
 *[GT\_]{GoToThisPart}*
 ```
-	EmergencyClosure:
-	GT_EmergencyClosure:
+EmergencyClosure:
+GT_EmergencyClosure:
 ```
 ## Define
 [TYPE_]{NAME_OF_DEF}
 ```
-	#define ALIENS_ON_PLANET_CNT 	1234
+#define ALIENS_ON_PLANET_CNT 	1234
 ```
 ## Macro (DEFINES)
 *[M\_]{OBJECT}\_{VERB}* or *[M\_]{VERB}\_{OBJECT}*
 ```
-	#define ALIENS_ON_PLANET_LOCATE ()
-	#define M_ALIENS_ON_PLANET_LOCATE ()
-	#define LOCATE_ALIENS_ON_PLANET ()
+#define ALIENS_ON_PLANET_LOCATE ()
+#define M_ALIENS_ON_PLANET_LOCATE ()
+#define LOCATE_ALIENS_ON_PLANET ()
 ```
 ## Macro (header guars)
 {NAME\_OF\_HEADER}\_H
 ```
-	MY_COOL_LIB_H
+MY_COOL_LIB_H
 ```
 * `\_` and `\_\_`-starting header guars are used by standard library headers
 ## Parenthesis / braces
 {func}( {args} );
 ```
-	printf( "spaces btwn args and parenthesis : %d", true_dat );
+printf( "spaces btwn args and parenthesis : %d", true_dat );
 ```
 {statement} ({condition}) {
     /*...*/
 }
 ```
-	if (true_dat == 1) {
-		/*...*/
-	} else {
-		/*...*/
-	}
+if (true_dat == 1) {
+	/*...*/
+} else {
+	/*...*/
+}
 ```
 ## Code example
 ```
-		#ifndef THAT_GUARD_THOUGH_H
-		#define THAT_GUARD_THOUGH_H
-		
-		#include "myheader.h"
-		
-		#include <header1.h>
-		#include <header2.h>
-		
-		#define STR_SIZE_OF_PLANET 	"BIG"
-		
-		noreturn void
-		f_datFunc( void )
-		{
-			unsigned int aliens_cnt = 100;
-			int happn = 0;
+#ifndef THAT_GUARD_THOUGH_H
+#define THAT_GUARD_THOUGH_H
 
-			printf( "This planet is %s.\n", STR_SIZE_OF_PLANET );
-			if (aliens_cnt > 50) {
-				puts( "it's happening" );
-				happn = 1;
-				goto GT_Habbening;
-			} else
-				puts( "we still have time" );
-			
-			switch (happn) {
-			case 0: return( EXIT_SUCCESS );
-			default:
-			GT_Habbening:
-				return( EXIT_FAILURE );
-			}
-		}
-		
-		
-		#endif 		/* ndef _THAT_GUARD_THOUGH_ */
+#include "myheader.h"
+
+#include <header1.h>
+#include <header2.h>
+
+#define STR_SIZE_OF_PLANET 	"BIG"
+
+noreturn void
+f_datFunc( void )
+{
+	unsigned int aliens_cnt = 100;
+	int happn = 0;
+
+	printf( "This planet is %s.\n", STR_SIZE_OF_PLANET );
+	if (aliens_cnt > 50) {
+		puts( "it's happening" );
+		happn = 1;
+		goto GT_Habbening;
+	} else
+		puts( "we still have time" );
+	
+	switch (happn) {
+	case 0: return( EXIT_SUCCESS );
+	default:
+	GT_Habbening:
+		return( EXIT_FAILURE );
+	}
+}
+
+
+#endif 		/* ndef _THAT_GUARD_THOUGH_ */
 ```
 
 OLDER VERSION
