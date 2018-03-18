@@ -66,19 +66,20 @@ GT_emergency_closure:
 ```C
 #define ALIENS_ON_PLANET_CNT 	1234
 ```
-## Macro (DEFINES)
+## Macros
 *[M\_]{OBJECT}\_{VERB}* or *[M\_]{VERB}\_{OBJECT}*
 ```C
 #define ALIENS_ON_PLANET_LOCATE ()
 #define M_ALIENS_ON_PLANET_LOCATE ()
 #define LOCATE_ALIENS_ON_PLANET ()
 ```
-## Macro (header guars)
+### (header guars)
 *{NAME\_OF\_HEADER}\_H*
 ```C
 MY_COOL_LIB_H
 ```
 * Rationale: `_`- and `__`-starting header guars are used by standard library headers
+
 ## Parenthesis / braces
 *{func}( {args} );*
 ```C
@@ -94,6 +95,7 @@ if (true_dat == 1) {
 	/*...*/
 }
 ```
+
 ## Code example
 ```C
 #ifndef THAT_GUARD_THOUGH_H
