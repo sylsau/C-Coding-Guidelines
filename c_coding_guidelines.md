@@ -100,6 +100,7 @@ if (true_dat == 1) {
 ```
 
 ## Code example
+
 ```C
 #ifndef THAT_GUARD_THOUGH_H
 #define THAT_GUARD_THOUGH_H
@@ -136,7 +137,7 @@ f_datFunc( void )
 }
 
 
-#endif 		/* ndef _THAT_GUARD_THOUGH_ */
+#endif 		/* ndef THAT_GUARD_THOUGH_H */
 ```
 
 ## General advices
