@@ -85,7 +85,7 @@ MY_COOL_LIB_H
 printf( "spaces btwn args and parenthesis : %d", true_dat );
 ```
 *{statement} ({condition}) {  
-    /*...*/  
+    /\*...\*/  
 }*
 ```C
 if (true_dat == 1) {
