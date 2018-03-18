@@ -24,14 +24,18 @@ extern int g_alien_cnt;
 sfSyl_welcome_txt_print ()
 sfSyl_print_welcome_txt ()
 ```
-### Declarations
+### Definitions
 **[attributes ]{type} 
-{function_name}( {args} )**
+{function_name}( {args} )  
+{
+	/*...*/
+}**
 ```
 noreturn void
 usage( int status )
 {
-	...
+	/*...*/
+	exit( status );
 }
 ```
 * Rationale: easier to `grep` (`"^func_name"`)
