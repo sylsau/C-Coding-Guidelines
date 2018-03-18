@@ -149,7 +149,7 @@ f_datFunc( void )
 
 ### Linux kernel coding style
 
-GNU `indent` now has an option to format your code according to the Linux kernel  
+GNU `indent` now has an option to format your code according to the Linux kernel 
 coding style: `indent -linux [file]`.
 Doc: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
 
