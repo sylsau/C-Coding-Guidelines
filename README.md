@@ -11,8 +11,8 @@ C Coding Guidelines
 * Code for debug purpose must be removed from the final form of the code.
 
 ## Variables
-*{name_of_var}* /*local*/
-*g_{detailed_name_of_var}* /*global*/
+Local: *{name_of_var}*
+Global: *g_{detailed_name_of_var}*
 ## Functions
 *{libLabel}_{objectName}[_]{actionVerb}*
 	sfSyl_welcomeTxt_print ()
@@ -270,6 +270,7 @@ GNU `indent` now has an option to format your code according to the Linux kernel
 coding style: `indent -linux [file]`.
 Doc: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
 
+-----
 Project tree
 ============
 

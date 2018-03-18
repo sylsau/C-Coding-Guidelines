@@ -11,8 +11,8 @@ C Coding Guidelines
 * Code for debug purpose must be removed from the final form of the code.
 
 ## Variables
-*{name_of_var}* /*local*/
-*g_{detailed_name_of_var}* /*global*/
+Local: *{name_of_var}*
+Global: *g_{detailed_name_of_var}*
 ## Functions
 *{libLabel}_{objectName}[_]{actionVerb}*
 	sfSyl_welcomeTxt_print ()
