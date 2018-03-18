@@ -76,7 +76,10 @@ GT_emergency_closure:
 ### Header guars
 *{NAME\_OF\_HEADER}\_H*
 ```C
-MY_COOL_LIB_H
+#ifndef MY_COOL_LIB_H
+#define MY_COOL_LIB_H
+/*...*/
+#endif
 ```
 * Rationale: `_`- and `__`-starting header guars are used by standard library headers
 
