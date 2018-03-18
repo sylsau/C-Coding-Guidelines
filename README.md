@@ -13,8 +13,8 @@ extern int g_alien_cnt;
 ### Names
 *{libLabel}\_{object}[\_]{action\_or\_verb}* or *{libLabel}\_{action\_or\_verb}\_{object}*
 ```C
-sfSyl_welcome_txt_print ()
-sfSyl_print_welcome_txt ()
+sfSyl_welcome_txt_print ();
+sfSyl_print_welcome_txt ();
 ```
 ### Definitions
 *[attributes ]{type}   
