@@ -13,63 +13,90 @@ C Coding Guidelines
 ## Variables
 Local: *{name_of_var}*  
 Global: *g_{detailed_name_of_var}*  
+```
 	int i;
 	extern int g_alien_cnt;
+```
 ## Functions
 *{libLabel}_{objectName}[_]{actionVerb}*
+```
 	sfSyl_welcomeTxt_print ()
+```
 ## Declarations
 *[attributes ]{type}  
 {function_name}( {args} )*
+```
 	noreturn void
 	usage( int status )
 	{
 		...
 	}
+```
 * Easier to `grep` (`"^func_name"`)
 ## Pointers
 {type} \*{var}
+```
 	int *var1, *var2; 	/* 2 pointers */
 	int *var1, var2; 	/* 1 pointer, 1 int ! */
+```
 ## Typedefs
 *{name}_t*
 *{libLabel_}{name}_t*
+```
 	superint_t
 	sfs_superint_t
+```
 ## Structures
 *{name_of_struct}_s*, *{name_of_struct_var}*
+```
 	datstruct_s this_is_a_struct
+```
 ## Enums
 *{name_of_enum}_e*, *{ENUM_CONST}*, *{name_of_enum_var}*
+```
 	enum mood_e { TAKE_IT, GIVE_IT, KEEP_IT } mood;
+```
 ## Gotos
 *[GT\_]{GoToThisPart}*
+```
 	EmergencyClosure:
 	GT_EmergencyClosure:
+```
 ## Define
 [TYPE_]{NAME_OF_DEF}
+```
 	#define ALIENS_ON_PLANET_CNT 	1234
+```
 ## Macro (DEFINES)
 *[M\_]{OBJECT}\_{VERB}* or *[M\_]{VERB}\_{OBJECT}*
+```
 	#define ALIENS_ON_PLANET_LOCATE ()
 	#define M_ALIENS_ON_PLANET_LOCATE ()
 	#define LOCATE_ALIENS_ON_PLANET ()
+```
 ## Macro (header guars)
 {NAME\_OF\_HEADER}\_H
+```
 	MY_COOL_LIB_H
+```
 * `\_` and `\_\_`-starting header guars are used by standard library headers
 ## Parenthesis / braces
 {func}( {args} );
+```
 	printf( "spaces btwn args and parenthesis : %d", true_dat );
+```
 {statement} ({condition}) {
     /*...*/
 }
+```
 	if (true_dat == 1) {
 		/*...*/
 	} else {
 		/*...*/
 	}
+```
 ## Code example
+```
 		#ifndef THAT_GUARD_THOUGH_H
 		#define THAT_GUARD_THOUGH_H
 		
@@ -104,7 +131,7 @@ Global: *g_{detailed_name_of_var}*
 		
 		
 		#endif 		/* ndef _THAT_GUARD_THOUGH_ */
-		
+```
 
 OLDER VERSION
 	Variables:
