@@ -24,20 +24,12 @@ extern int g_alien_cnt;
 sfSyl_welcome_txt_print ()
 sfSyl_print_welcome_txt ()
 ```
-
-test | test
--- | --
-lol | lel
-
 ### Definitions
-
-test | test
--- | --
-**[attributes ]{type}   	| lel
-{function_name}( {args} )   	|
-{  				|
-	/*...*/  		|
-}** 				|
+**[attributes ]{type}   
+{function_name}( {args} )   
+{  
+	/*...*/  
+}**
 ```
 noreturn void
 usage( int status )
