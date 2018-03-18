@@ -6,62 +6,61 @@ Tree
 
 ```
 [PROJECT DIRECTORY]/
-├── bin
-│   ├── data -> ../data
-│   ├── Configuration.txt
-│   ├── Project
-│   ├── Project.exe
-│   └── log.Project
-├── data
-│   ├── images
-│   └── ...
-├── etc
-│   └── conf.project
-├── lib32
-│   ├── libcsfml-audio.dll
-│   └── ...
-├── lib64
-│   ├── libcsfml-audio.so.1.6
-│   └── ...
-├── man
-│   └── project.6
-├── readme.d
-│   ├── AUTHORS.txt
-│   ├── LICENSE.SFML.txt
-│   ├── LICENSE.txt
-│   ├── changelog
-│   └── copyright
-├── src
-│   ├── font
-│   │   └── usedGPLFont.zip
-│   ├── inc
-│   │   └── SFML
-│   │       ├── Audio
-│   │       │   ├── AudioResource.hpp
-│   │       │   ├── Types.h
-│   │       │   └── ...
-│   │       ├── Graphics
-│   │       │   └── ...
-│   │       └── ...
-│   ├── Makefile
-│   ├── libsfsys.c
-│   ├── libsfsys.h
-│   ├── project.c
-│   ├── project.h
-│   ├── mod.c
-│   ├── mod.h
-│   ├── utils.c
-│   └── utils.h
-├── wip
-│   ├── DevLog
-│   │   ├── Screenshot - 12142013 - 02:44:22 PM.png
-│   │   └── ...
-│   ├── datMusicParts
-│   │   └── ...
-│   └── ...
-├── NOTES
-├── README
-└── TODO
+|-- bin
+|   |-- data -> ../data
+|   |-- Project
+|   |-- Project.exe
+|   +-- log.Project
+|-- data
+|   |-- images
+|   +-- ...
+|-- etc
+|   +-- conf.project
+|-- lib32
+|   |-- libcsfml-audio.dll
+|   +-- ...
+|-- lib64
+|   |-- libcsfml-audio.so.1.6
+|   +-- ...
+|-- man
+|   +-- project.6
+|-- readme.d
+|   |-- AUTHORS.txt
+|   |-- LICENSE.SFML.txt
+|   |-- LICENSE.txt
+|   |-- changelog
+|   +-- copyright
+|-- src
+|   |-- font
+|   |   +-- usedGPLFont.zip
+|   |-- inc
+|   |   +-- SFML
+|   |       |-- Audio
+|   |       |   |-- AudioResource.hpp
+|   |       |   |-- Types.h
+|   |       |   +-- ...
+|   |       |-- Graphics
+|   |       |   +-- ...
+|   |       +-- ...
+|   |-- Makefile
+|   |-- libsfsys.c
+|   |-- libsfsys.h
+|   |-- project.c
+|   |-- project.h
+|   |-- mod.c
+|   |-- mod.h
+|   |-- utils.c
+|   +-- utils.h
+|-- wip
+|   |-- DevLog
+|   |   |-- Screenshot - 12142013 - 02:44:22 PM.png
+|   |   +-- ...
+|   |-- datMusicParts
+|   |   +-- ...
+|   +-- ...
+|-- NOTES
+|-- README
++-- TODO
 ```
 
 
