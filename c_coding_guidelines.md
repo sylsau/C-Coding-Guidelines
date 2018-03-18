@@ -25,10 +25,10 @@ sfSyl_welcome_txt_print ()
 sfSyl_print_welcome_txt ()
 ```
 ### Definitions
-**[attributes ]{type} 
-{function_name}( {args} )  
-{
-	/*...*/
+**[attributes ]{type}   
+{function_name}( {args} )   
+{  
+	/*...*/  
 }**
 ```
 noreturn void
