@@ -30,11 +30,14 @@ test | test
 lol | lel
 
 ### Definitions
-**[attributes ]{type}   
-{function_name}( {args} )   
-{  
-	/*...*/  
-}**
+
+test | test
+-- | --
+**[attributes ]{type}   	| lel
+{function_name}( {args} )   	|
+{  				|
+	/*...*/  		|
+}** 				|
 ```
 noreturn void
 usage( int status )
