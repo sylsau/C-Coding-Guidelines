@@ -10,11 +10,13 @@ C Coding Guidelines
 * Code must not be generic, but very specific to what exactly you're doing.
 * Code for debug purpose must be removed from the final form of the code.
 
-| Variables | - |
-| -- | -- |
-| Local: **{name\_of\_var}**  			| `int i;` |
-| Global: **g\_{detailed\_name\_of\_var}**  	| `extern int g_alien_cnt; ` |
-
+## Variables
+Local: **{name\_of\_var}**  
+Global: **g\_{detailed\_name\_of\_var}**  
+```
+int i;
+extern int g_alien_cnt;
+```
 ## Functions
 ### Names
 **{libLabel}\_{object}[\_]{action\_or\_verb}** or **{libLabel}\_{action\_or\_verb}\_{object}**
@@ -22,6 +24,11 @@ C Coding Guidelines
 sfSyl_welcome_txt_print ()
 sfSyl_print_welcome_txt ()
 ```
+
+test | test
+-- | --
+lol | lel
+
 ### Definitions
 **[attributes ]{type}   
 {function_name}( {args} )   
@@ -152,8 +159,7 @@ Doc: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
 
 ### References/resources
 
-* Notes on Programming in C
-                    Rob Pike
+* *Notes on Programming in C*, Rob Pike
 -----
 Project tree
 ============
