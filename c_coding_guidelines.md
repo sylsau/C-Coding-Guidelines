@@ -11,8 +11,10 @@ C Coding Guidelines
 * Code for debug purpose must be removed from the final form of the code.
 
 ## Variables
-Local: *{name_of_var}*
-Global: *g_{detailed_name_of_var}*
+Local: *{name_of_var}*  
+Global: *g_{detailed_name_of_var}*  
+	int i;
+	extern int g_alien_cnt;
 ## Functions
 *{libLabel}_{objectName}[_]{actionVerb}*
 	sfSyl_welcomeTxt_print ()
@@ -46,12 +48,12 @@ Global: *g_{detailed_name_of_var}*
 	GT_EmergencyClosure:
 ## Define
 [TYPE_]{NAME_OF_DEF}
-	#define CATS_ON_PLANET_CNT 	1234
+	#define ALIENS_ON_PLANET_CNT 	1234
 ## Macro (DEFINES)
 *[M\_]{OBJECT}\_{VERB}* or *[M\_]{VERB}\_{OBJECT}*
-	#define CATS_ON_PLANET_LOCATE ()
-	#define M_CATS_ON_PLANET_LOCATE ()
-	#define LOCATE_CATS_ON_PLANET ()
+	#define ALIENS_ON_PLANET_LOCATE ()
+	#define M_ALIENS_ON_PLANET_LOCATE ()
+	#define LOCATE_ALIENS_ON_PLANET ()
 ## Macro (header guars)
 {NAME\_OF\_HEADER}\_H
 	MY_COOL_LIB_H
@@ -81,11 +83,11 @@ Global: *g_{detailed_name_of_var}*
 		noreturn void
 		f_datFunc( void )
 		{
-			unsigned int cats_cnt = 100;
+			unsigned int aliens_cnt = 100;
 			int happn = 0;
 
 			printf( "This planet is %s.\n", STR_SIZE_OF_PLANET );
-			if (cats_cnt > 50) {
+			if (aliens_cnt > 50) {
 				puts( "it's happening" );
 				happn = 1;
 				goto GT_Habbening;
