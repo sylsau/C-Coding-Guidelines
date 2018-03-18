@@ -10,7 +10,7 @@ C Coding Guidelines
 * Code must not be generic, but very specific to what exactly you're doing.
 * Code for debug purpose must be removed from the final form of the code.
 
-| Variables | -- |
+| Variables | - |
 | -- | -- |
 | Local: **{name\_of\_var}**  			| `int i;` |
 | Global: **g\_{detailed\_name\_of\_var}**  	| `extern int g_alien_cnt; ` |
