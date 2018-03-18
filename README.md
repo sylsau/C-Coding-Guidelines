@@ -141,7 +141,7 @@ f_datFunc( void )
 * *snake_case*: easier to type, harder to read
 	* Though: some of the best ever written softwares were made in *snake_case*
 * *camelCase*: harder to type, easier to read
-	* Microsoft uses it...
+	* Microsoft uses it, so...
 <!-- separator -->
 * Dividing the code in functions increase its comprehension and readability.
 * Code must not be generic, but very specific to what exactly you're doing.
@@ -158,8 +158,9 @@ allows for easier `grep`-ing of function definitions.
 ### References/resources
 
 * *Linux Kernel Coding style*: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
-* *Notes on Programming in C*, Rob Pike
-* *C Header File Guidelines*, David Kieras, University of Michigan
+* *Notes on Programming in C*, Rob Pike: <https://www.lysator.liu.se/c/pikestyle.html>
+* *C Header File Guidelines*, David Kieras, University of Michigan: <http://umich.edu/~eecs381/handouts/CHeaderFileGuidelines.pdf>
+* *JPL Coding Standard C*, Jet Propulsion Laboratory, NASA: <https://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf>
 
 
 ---
