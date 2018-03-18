@@ -202,15 +202,14 @@ Tree
 │   │       │   └── ...
 │   │       └── ...
 │   ├── Makefile
-│   ├── deb.Makefile
-│   ├── defs.h
-│   ├── func.c
-│   ├── func.h
 │   ├── libsfsys.c
 │   ├── libsfsys.h
-│   ├── main.c
+│   ├── project.c
+│   ├── project.h
 │   ├── mod.c
-│   └── mod.h
+│   ├── mod.h
+│   ├── utils.c
+│   └── utils.h
 ├── wip
 │   ├── DevLog
 │   │   ├── Screenshot - 12142013 - 02:44:22 PM.png
@@ -227,24 +226,24 @@ Tree
 Directories
 -----------
 
-  [NAME]	[CONTENT]
---------------------------------------------------------------------------------------------------------------------------------------
-  `./        `  Regular README files and possibly other (few) things
-  `./bin     `  Binairies ; where the program is built
-  `./data    `  Project data (images, sounds, fonts, etc... )
-  `./etc     `  Configuration files
-  `./lib32   `  32-bit libraries (*.lib, *.so, *.a, *.dll)
-  `./lib64   `  64-bit libraries (*.lib, *.so, *.a, *.dll)
-  `./man     `  Linux manual pages
-  `./readme.d` 	Remaining licensing information and other informative text files
-  `./src     `  Source files
-  `./src/inc `  Included external headers
-  `./wip     `  "Work In Progress" material
+  [NAME]	|	[CONTENT]
+---------------------------------------------------------------------------------
+  `./        ` | Regular README files and possibly other (few) things
+  `./bin     ` | Binairies ; where the program is built
+  `./data    ` | Project data (images, sounds, fonts, etc... )
+  `./etc     ` | Configuration files
+  `./lib32   ` | 32-bit libraries (`*.lib`, `\*.so`, `\*.a`, `\*.dll`)
+  `./lib64   ` | 64-bit libraries (`*.lib`, `\*.so`, `\*.a`, `\*.dll`)
+  `./man     ` | Linux manual pages
+  `./readme.d` | Remaining licensing information and other informative text files
+  `./src     ` | Source files
+  `./src/inc ` | Included external headers
+  `./wip     ` | "**W**ork **I**n **P**rogress" material
 
 
 Releasing
 ---------
 
   When releasing the project to a wider audience, it's necessary to remove
-	useless files and directory such as:
-    * ./wip
+	useless files and directory such as:  
+    * `./wip`
