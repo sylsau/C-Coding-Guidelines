@@ -11,20 +11,22 @@ C Coding Guidelines
 * Code for debug purpose must be removed from the final form of the code.
 
 ## Variables
-Local: *{name_of_var}*  
-Global: *g_{detailed_name_of_var}*  
+Local: **{name\_of\_var}**  
+Global: **g\_{detailed\_name\_of\_var}**  
 ```
 	int i;
 	extern int g_alien_cnt;
 ```
 ## Functions
-*{libLabel}_{objectName}[_]{actionVerb}*
+### Names
+**{libLabel}\_{object}[\_]{action\_or\_verb}** or **{libLabel}\_{action\_or\_verb}\_{object}**
 ```
-	sfSyl_welcomeTxt_print ()
+	sfSyl_welcome_txt_print ()
+	sfSyl_print_welcome_txt ()
 ```
-## Declarations
-*[attributes ]{type}  
-{function_name}( {args} )*
+### Declarations
+**[attributes ]{type} 
+{function_name}( {args} )**
 ```
 	noreturn void
 	usage( int status )
@@ -32,9 +34,9 @@ Global: *g_{detailed_name_of_var}*
 		...
 	}
 ```
-* Easier to `grep` (`"^func_name"`)
+* Rationale: easier to `grep` (`"^func_name"`)
 ## Pointers
-{type} \*{var}
+**{type} \*{var}**
 ```
 	int *var1, *var2; 	/* 2 pointers */
 	int *var1, var2; 	/* 1 pointer, 1 int ! */
