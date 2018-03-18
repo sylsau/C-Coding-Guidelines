@@ -20,7 +20,7 @@ sfSyl_print_welcome_txt ()
 *[attributes ]{type}   
 {function_name}( {args} )   
 {  
-	/*...*/  
+	/\*...\*/  
 }*
 ```C
 noreturn void
@@ -31,6 +31,7 @@ usage( int status )
 }
 ```
 * Rationale: easier to `grep` (`"^func_name"`)
+
 ## Pointers
 *{type} \*{var}*
 ```C
@@ -77,7 +78,7 @@ GT_emergency_closure:
 ```C
 MY_COOL_LIB_H
 ```
-* Rationale: `\_` and `\_\_`-starting header guars are used by standard library headers
+* Rationale: `_`- and `__`-starting header guars are used by standard library headers
 ## Parenthesis / braces
 *{func}( {args} );*
 ```C
