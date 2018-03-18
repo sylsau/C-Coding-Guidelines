@@ -149,14 +149,14 @@ f_datFunc( void )
 * Always use header guards in header files.
 * Put braces even on one-line statements.
 
-### GNU `indent`
+### Formatting code with GNU *indent*
 
-GNU `indent` now has an option to format your code according to the Linux kernel 
-coding style: `indent -linux [file]`; it's just missing the one option I would
-add (see *sindent*).
-Doc: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
+*sindent*, my own taste of GNU indent, format your code according to the Linux
+kernel coding style (`-linux`) plus the one option it's missing (`-psl`), which
+allows for easier `grep`-ing of function definitions.
 
 ### References/resources
 
+* *Linux Kernel Coding style*: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
 * *Notes on Programming in C*, Rob Pike
 * *C Header File Guidelines*, David Kieras, University of Michigan
