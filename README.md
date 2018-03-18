@@ -155,7 +155,7 @@ f_datFunc( void )
 
 ### Formatting your code using *sindent*
 
-*sindent*, my own taste of GNU indent, format your code according to the Linux
+*sindent*, my own taste of GNU *indent*, format your code according to the Linux
 kernel coding style (`-linux`) plus the one option it's missing (`-psl`), which
 allows for easier `grep`-ing of function definitions.
 
