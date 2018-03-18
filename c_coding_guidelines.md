@@ -149,7 +149,7 @@ f_datFunc( void )
 * Always use header guards in header files.
 * Put braces even on one-line statements.
 
-### Formatting code with GNU *indent*
+### Formatting your code using *sindent*
 
 *sindent*, my own taste of GNU indent, format your code according to the Linux
 kernel coding style (`-linux`) plus the one option it's missing (`-psl`), which
