@@ -1,15 +1,6 @@
 C Coding Guidelines
 ===================
 
-* *snake_case*: easier to type, harder to read
-	* Though: some of the best ever written softwares were made in *snake_case*
-* *camelCase*: harder to type, easier to read
-	* Microsoft uses it...
-<!-- separator -->
-* Dividing the code in functions increase its comprehension and readability.
-* Code must not be generic, but very specific to what exactly you're doing.
-* Code for debug purpose must be removed from the final form of the code.
-
 ## Variables
 Local: **{name\_of\_var}**  
 Global: **g\_{detailed\_name\_of\_var}**  
@@ -143,7 +134,15 @@ f_datFunc( void )
 
 ## General advices
 
-* Always use header guards.
+* *snake_case*: easier to type, harder to read
+	* Though: some of the best ever written softwares were made in *snake_case*
+* *camelCase*: harder to type, easier to read
+	* Microsoft uses it...
+<!-- separator -->
+* Dividing the code in functions increase its comprehension and readability.
+* Code must not be generic, but very specific to what exactly you're doing.
+* Code for debug purpose must be removed from the final form of the code.
+* Always use header guards in header files.
 * Put braces even on one-line statements.
 
 ### Linux kernel coding style
@@ -155,6 +154,7 @@ Doc: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
 ### References/resources
 
 * *Notes on Programming in C*, Rob Pike
+* *C Header File Guidelines*, David Kieras, University of Michigan
 -----
 Project tree
 ============
@@ -226,16 +226,16 @@ Tree
 Directories
 -----------
 
-  [NAME] 	|	[CONTENT]
+  [Name] 	|	[Content]
 --------------- | ---------------------------------------------------------------
   `./        `  | Regular README files and possibly other (few) things
   `./bin     `  | Binairies ; where the program is built
   `./data    `  | Project data (images, sounds, fonts, etc... )
   `./etc     `  | Configuration files
-  `./lib32   `  | 32-bit libraries (`*.lib`, `\*.so`, `\*.a`, `\*.dll`)
-  `./lib64   `  | 64-bit libraries (`*.lib`, `\*.so`, `\*.a`, `\*.dll`)
+  `./lib32   `  | 32-bit libraries (`*.lib`, `*.so`, `*.a`, `*.dll`)
+  `./lib64   `  | 64-bit libraries (`*.lib`, `*.so`, `*.a`, `*.dll`)
   `./man     `  | Linux manual pages
-  `./readme.d`  | Remaining licensing information and other informative text files
+  `./readme.d`  | Remaining licensing information and other informative text files (not mandatory)
   `./src     `  | Source files
   `./src/inc `  | Included external headers
   `./wip     `  | "**W**ork **I**n **P**rogress" material

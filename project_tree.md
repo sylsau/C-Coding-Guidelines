@@ -68,16 +68,16 @@ Tree
 Directories
 -----------
 
-  [NAME] 	|	[CONTENT]
+  [Name] 	|	[Content]
 --------------- | ---------------------------------------------------------------
   `./        `  | Regular README files and possibly other (few) things
   `./bin     `  | Binairies ; where the program is built
   `./data    `  | Project data (images, sounds, fonts, etc... )
   `./etc     `  | Configuration files
-  `./lib32   `  | 32-bit libraries (`*.lib`, `\*.so`, `\*.a`, `\*.dll`)
-  `./lib64   `  | 64-bit libraries (`*.lib`, `\*.so`, `\*.a`, `\*.dll`)
+  `./lib32   `  | 32-bit libraries (`*.lib`, `*.so`, `*.a`, `*.dll`)
+  `./lib64   `  | 64-bit libraries (`*.lib`, `*.so`, `*.a`, `*.dll`)
   `./man     `  | Linux manual pages
-  `./readme.d`  | Remaining licensing information and other informative text files
+  `./readme.d`  | Remaining licensing information and other informative text files (not mandatory)
   `./src     `  | Source files
   `./src/inc `  | Included external headers
   `./wip     `  | "**W**ork **I**n **P**rogress" material
