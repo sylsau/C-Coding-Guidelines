@@ -2,25 +2,26 @@ C Coding Guidelines
 ===================
 
 ## Variables
-Local: **{name\_of\_var}**  
-Global: **g\_{detailed\_name\_of\_var}**  
-```
+Local: *{name\_of\_var}*  
+Global: *g\_{detailed\_name\_of\_var}*  
+```C
 int i;
 extern int g_alien_cnt;
 ```
+<!-- TODO: make it shorter -->
 ## Functions
 ### Names
-**{libLabel}\_{object}[\_]{action\_or\_verb}** or **{libLabel}\_{action\_or\_verb}\_{object}**
+*{libLabel}\_{object}[\_]{action\_or\_verb}* or *{libLabel}\_{action\_or\_verb}\_{object}*
 ```
 sfSyl_welcome_txt_print ()
 sfSyl_print_welcome_txt ()
 ```
 ### Definitions
-**[attributes ]{type}   
+*[attributes ]{type}   
 {function_name}( {args} )   
 {  
 	/*...*/  
-}**
+}*
 ```
 noreturn void
 usage( int status )
@@ -31,60 +32,60 @@ usage( int status )
 ```
 * Rationale: easier to `grep` (`"^func_name"`)
 ## Pointers
-**{type} \*{var}**
+*{type} \*{var}*
 ```
 int *var1, *var2; 	/* 2 pointers */
 int *var1, var2; 	/* 1 pointer, 1 int ! */
 ```
 ## Typedefs
-**[libLabel\_]{name}\_t**
+*[libLabel\_]{name}\_t*
 ```
 superint_t i;
 sfs_superint_t j;
 ```
 ## Structures
-**{name\_of\_struct}\_s**, **{name\_of\_struct\_var}**
+*{name\_of\_struct}\_s*, *{name\_of\_struct\_var}*
 ```
 datstruct_s this_is_a_struct;
 ```
 ## Enums
-**{name\_of\_enum}\_e**, **{ENUM\_CONST}**, **{name\_of\_enum\_var}**
+*{name\_of\_enum}\_e*, *{ENUM\_CONST}*, *{name\_of\_enum\_var}*
 ```
 enum mood_e { TAKE_IT, GIVE_IT, KEEP_IT } my_mood;
 ```
 ## Gotos
-**[GT\_]{ThisPart}** or **[GT\_]{this_part}**
+*[GT\_]{ThisPart}* or *[GT\_]{this_part}*
 ```
 EmergencyClosure:
 GT_EmergencyClosure:
 GT_emergency_closure:
 ```
 ## Define
-**[TYPE\_]{NAME\_OF\_DEF}**
+*[TYPE\_]{NAME\_OF\_DEF}*
 ```
 #define ALIENS_ON_PLANET_CNT 	1234
 ```
 ## Macro (DEFINES)
-**[M\_]{OBJECT}\_{VERB}** or **[M\_]{VERB}\_{OBJECT}**
+*[M\_]{OBJECT}\_{VERB}* or *[M\_]{VERB}\_{OBJECT}*
 ```
 #define ALIENS_ON_PLANET_LOCATE ()
 #define M_ALIENS_ON_PLANET_LOCATE ()
 #define LOCATE_ALIENS_ON_PLANET ()
 ```
 ## Macro (header guars)
-**{NAME\_OF\_HEADER}\_H**
+*{NAME\_OF\_HEADER}\_H*
 ```
 MY_COOL_LIB_H
 ```
 * Rationale: `\_` and `\_\_`-starting header guars are used by standard library headers
 ## Parenthesis / braces
-**{func}( {args} );**
+*{func}( {args} );*
 ```
 printf( "spaces btwn args and parenthesis : %d", true_dat );
 ```
-**{statement} ({condition}) {  
+*{statement} ({condition}) {  
     /*...*/  
-}**
+}*
 ```
 if (true_dat == 1) {
 	/*...*/
