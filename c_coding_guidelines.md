@@ -14,8 +14,8 @@ C Coding Guidelines
 Local: **{name\_of\_var}**  
 Global: **g\_{detailed\_name\_of\_var}**  
 ```
-	int i;
-	extern int g_alien_cnt;
+int i;
+extern int g_alien_cnt;
 ```
 ## Functions
 ### Names
