@@ -259,4 +259,5 @@ Releasing
 
 When releasing the project to a wider audience, it's necessary to remove useless 
 files and directory such as:  
+
 * `./wip`
