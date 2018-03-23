@@ -170,8 +170,8 @@ allows for easier `grep`-ing of function definitions.
 ---
 
 
-Project tree
-============
+Project Hierarchy Standard
+==========================
 
 Tree
 ----
@@ -257,6 +257,6 @@ Directories
 Releasing
 ---------
 
-  When releasing the project to a wider audience, it's necessary to remove
-	useless files and directory such as:  
-    * `./wip`
+When releasing the project to a wider audience, it's necessary to remove useless 
+files and directory such as:  
+* `./wip`
