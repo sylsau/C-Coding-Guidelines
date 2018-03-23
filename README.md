@@ -11,11 +11,13 @@ extern int g_alien_cnt;
 <!-- TODO: make it shorter -->
 ## Functions
 ### Names
-*{libLabel}\_{object}[\_]{action\_or\_verb}* or *{libLabel}\_{action\_or\_verb}\_{object}*
+*{libLabel}\_{object}\_{action\_or\_verb}* or *{libLabel}\_{action\_or\_verb}\_{object}*
 ```C
 sfSyl_welcome_txt_print ();
 sfSyl_print_welcome_txt ();
 ```
+* Rationale: first form is easier for completion
+
 ### Definitions
 *[attributes ]{type}   
 {function_name}( {args} )   
