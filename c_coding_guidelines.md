@@ -76,7 +76,7 @@ GT_emergency_closure:
 #define M_ALIENS_ON_PLANET_LOCATE ()
 #define LOCATE_ALIENS_ON_PLANET ()
 ```
-### Header guars
+### Header guards
 *{NAME\_OF\_HEADER}\_H*
 ```C
 #ifndef MY_COOL_LIB_H
@@ -84,7 +84,7 @@ GT_emergency_closure:
 /*...*/
 #endif
 ```
-* Rationale: `_`- and `__`-starting header guars are used by standard library headers
+* Rationale: `_`- and `__`-starting header guards are used by standard library headers
 
 ## Parenthesis / braces
 *{func}( {args} );*
