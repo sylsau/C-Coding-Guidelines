@@ -8,14 +8,14 @@ Tree
 [PROJECT DIRECTORY]/
 |-- bin
 |   |-- data -> ../data
-|   |-- Project
-|   |-- Project.exe
-|   +-- log.Project
+|   |-- project
+|   |-- project.exe
+|   +-- project.log
 |-- data
 |   |-- images
 |   +-- ...
 |-- etc
-|   +-- conf.project
+|   +-- project.conf
 |-- lib32
 |   |-- libcsfml-audio.dll
 |   +-- ...
@@ -43,14 +43,10 @@ Tree
 |   |       |   +-- ...
 |   |       +-- ...
 |   |-- Makefile
-|   |-- libsfsys.c
-|   |-- libsfsys.h
 |   |-- project.c
 |   |-- project.h
-|   |-- mod.c
-|   |-- mod.h
 |   |-- utils.c
-|   +-- utils.h
+|   +-- ...
 |-- wip
 |   |-- DevLog
 |   |   |-- Screenshot - 12142013 - 02:44:22 PM.png

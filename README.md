@@ -34,12 +34,13 @@ usage( int status )
 ```
 * Rationale: easier to `grep` (`"^func_name"`)
 
-## Pointers
+## Pointers declaration
 *{type} \*{var}*
 ```C
 int *var1, *var2; 	/* 2 pointers */
-int *var1, var2; 	/* 1 pointer, 1 int ! */
 ```
+* Rationale: avoid confusion like in `int *var1, var2; 	/* 1 pointer, 1 int ! */`
+
 ## Typedefs
 *[libLabel\_]{name}\_t*
 ```C
@@ -217,14 +218,10 @@ Tree
 |   |       |   +-- ...
 |   |       +-- ...
 |   |-- Makefile
-|   |-- libsfsys.c
-|   |-- libsfsys.h
 |   |-- project.c
 |   |-- project.h
-|   |-- mod.c
-|   |-- mod.h
 |   |-- utils.c
-|   +-- utils.h
+|   +-- ...
 |-- wip
 |   |-- DevLog
 |   |   |-- Screenshot - 12142013 - 02:44:22 PM.png

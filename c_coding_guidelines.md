@@ -34,12 +34,13 @@ usage( int status )
 ```
 * Rationale: easier to `grep` (`"^func_name"`)
 
-## Pointers
+## Pointers declaration
 *{type} \*{var}*
 ```C
 int *var1, *var2; 	/* 2 pointers */
-int *var1, var2; 	/* 1 pointer, 1 int ! */
 ```
+* Rationale: avoid confusion like in `int *var1, var2; 	/* 1 pointer, 1 int ! */`
+
 ## Typedefs
 *[libLabel\_]{name}\_t*
 ```C
