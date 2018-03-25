@@ -64,6 +64,8 @@ EmergencyClosure:
 GT_EmergencyClosure:
 GT_emergency_closure:
 ```
+* Always on the very first level of indentation: must be immediatly noticeable
+
 ## Define
 *[TYPE\_]{NAME\_OF\_DEF}*
 ```C
@@ -86,11 +88,16 @@ GT_emergency_closure:
 ```
 * Rationale: `_`- and `__`-starting header guards are used by standard library headers
 
-## Parenthesis / braces
+## Parentheses / braces
+* Parentheses: different policies for functions and statements for the sake of 
+distinction
+
+### Functions calls
 *{func}( {args} );*
 ```C
 printf( "spaces btwn args and parenthesis : %d", true_dat );
 ```
+### Statements
 *{statement} ({condition}) {  
     /\*...\*/  
 }*
@@ -159,8 +166,8 @@ f_datFunc( void )
 ### Formatting your code using *sindent*
 
 *sindent*, my own taste of GNU *indent*, format your code according to the Linux
-kernel coding style (`-linux`) plus the one option it's missing (`-psl`), which
-allows for easier `grep`-ing of function definitions.
+kernel coding style (`-linux`) plus a few option it's missing (`-psl -prs -npcs`), which
+allows for easier `grep`-ing of function definitions and function calls.
 
 ### References/resources
 

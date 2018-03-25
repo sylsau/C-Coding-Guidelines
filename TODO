@@ -1,2 +1,4 @@
 * compléter avec mes lectures
 * ajout note Linus Torvalds sur le c++
+* modif code sindent pour espaces parentheses des function calls comme "printf( "lol\n );"
+* éviter les répétitions (réorganiser le truc?) exemple: functions, etc.
