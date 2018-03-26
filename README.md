@@ -20,7 +20,7 @@ sfSyl_print_welcome_txt ();
 
 ### Definitions
 *[attributes ]{type}   
-{function_name}( {args} )   
+{func_name}( {args} )   
 {  
 	/\*...\*/  
 }*
@@ -93,7 +93,7 @@ GT_emergency_closure:
 distinction
 
 ### Functions calls
-*{func}( {args} );*
+*{func_name}( {args} );*
 ```C
 printf( "spaces btwn args and parenthesis : %d", true_dat );
 ```
