@@ -2,8 +2,8 @@ C Coding Guidelines
 ===================
 
 ## Variables
-Local: *{name\_of\_var}*  
-Global: *g\_{detailed\_name\_of\_var}*  
+Local: *{name\_of\_var}*   
+Global: *g\_{detailed\_name\_of\_var}*
 ```C
 int i;
 extern int g_alien_cnt;
@@ -16,7 +16,7 @@ extern int g_alien_cnt;
 sfSyl_welcome_txt_print ();
 sfSyl_print_welcome_txt ();
 ```
-* Rationale: first form is easier for completion
+Rationale: first form is easier for completion.
 
 ### Definitions
 *[attributes ]{type}   
@@ -32,14 +32,15 @@ usage( int status )
 	exit( status );
 }
 ```
-* Rationale: easier to `grep` (`"^func_name"`)
+Rationale: easier to `grep` (`"^func_name"`).
 
 ## Pointers declaration
 *{type} \*{var}*
 ```C
 int *var1, *var2; 	/* 2 pointers */
 ```
-* Rationale: avoid confusion like in `int *var1, var2; 	/* 1 pointer, 1 int ! */`
+Rationale: avoid confusion like in `int *var1, var2; 	/* 1 pointer, 1 int ! */`
+.
 
 ## Typedefs
 *[libLabel\_]{name}\_t*
@@ -48,12 +49,15 @@ superint_t i;
 sfs_superint_t j;
 ```
 ## Structures
-*{name\_of\_struct}\_s*, *{name\_of\_struct\_var}*
+*{name\_of\_struct}\_s*  
+*{name\_of\_struct\_var}*
 ```C
 datstruct_s this_is_a_struct;
 ```
 ## Enums
-*{name\_of\_enum}\_e*, *{ENUM\_CONST}*, *{name\_of\_enum\_var}*
+*{name\_of\_enum}\_e*  
+*{ENUM\_CONST}*  
+*{name\_of\_enum\_var}*
 ```C
 enum mood_e { TAKE_IT, GIVE_IT, KEEP_IT } my_mood;
 ```
@@ -64,7 +68,8 @@ EmergencyClosure:
 GT_EmergencyClosure:
 GT_emergency_closure:
 ```
-* Always on the very first level of indentation: must be immediatly noticeable
+*Goto* statements must always be on the very first level of indentation: they 
+must be immediatly noticeable.
 
 ## Define
 *[TYPE\_]{NAME\_OF\_DEF}*
@@ -86,14 +91,15 @@ GT_emergency_closure:
 /*...*/
 #endif
 ```
-* Rationale: `_`- and `__`-starting header guards are used by standard library headers
+Rationale: `_`- and `__`-starting header guards are used by standard library 
+headers.
 
 ## Parentheses / braces
-* Parentheses: different policies for functions and statements for the sake of 
-distinction
+We have different policies for functions and statements for the sake of 
+distinction.
 
 ### Functions calls
-*{func_name}( {args} );*
+*{func\_name}( {args} );*
 ```C
 printf( "spaces btwn args and parenthesis : %d", true_dat );
 ```
@@ -138,11 +144,11 @@ f_datFunc( void )
 	} else { puts( "ERROR" ); goto GT_Habbening; }
 	
 	switch (happn) {
-	case 0:
-		return( EXIT_SUCCESS );
-	default:
+		case 0:
+			return( EXIT_SUCCESS );
+		default:
 	GT_Habbening:
-		return( EXIT_FAILURE );
+			return( EXIT_FAILURE );
 	}
 }
 
