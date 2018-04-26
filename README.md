@@ -1,4 +1,5 @@
 # C CODING GUIDELINES
+**[Also available as a PDF [here](./c_coding_guidelines.pdf)]**
 
 Syntax
 ======
