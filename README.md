@@ -1,3 +1,5 @@
+# C CODING GUIDELINES
+
 Syntax
 ======
 
@@ -192,9 +194,9 @@ General advices
 ---------------
 
 * *snake_case*: easier to type, harder to read
-	* Though: some of the best ever written softwares were made in *snake_case*
+    * Though: some of the best ever written softwares were made in *snake_case*
 * *camelCase*: harder to type, easier to read
-	* Microsoft uses it, so...
+    * Microsoft uses it, so...
 <!-- separator -->
 * Dividing the code in functions increase its comprehension and readability.
 * Code must not be generic, but very specific to what exactly you're doing.
@@ -281,7 +283,7 @@ I hereby propose a standard for organizing project file.
 
 ### Directories
 
-  [Name] 	|	[Content]
+  Directory     |  Content
 --------------- | ---------------------------------------------------------------
   `./        `  | Regular README files and possibly other (few) things
   `./bin     `  | Binairies ; where the program is built

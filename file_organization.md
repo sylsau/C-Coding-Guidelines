@@ -76,7 +76,7 @@ I hereby propose a standard for organizing project file.
 
 ### Directories
 
-  [Name] 	|	[Content]
+  Directory     |  Content
 --------------- | ---------------------------------------------------------------
   `./        `  | Regular README files and possibly other (few) things
   `./bin     `  | Binairies ; where the program is built
